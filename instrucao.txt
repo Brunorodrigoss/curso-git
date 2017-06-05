@@ -1,0 +1,66 @@
+1 - Criação da chave de segurança (Git Bash): ssh-keygen -t rsa -C "seu_email@provedor.com"
+2 - Incluir a chave RSA(id_rsa.pub) no  "Settings", "SSH and GPG keys" e "New SSH key" no Github.
+
+Clonar um repositório existente: git clone https://github.com/jcfonsecagit/repositorio.git
+
+Listar todas as tags do projeto: git tag
+
+Verificar uma tag específica: git checkout v0.1 --->(v.01 nome da tag)
+
+mostrar a diferença (diff) entre duas versões: git diff v0.1 v0.2
+
+saber quem fez alteração no arquivo(linha-a-linha): git blame index.html (para sair do blame, pressionar a letra 'q').
+
+indicar que a pasta será um repositório= git init
+
+verificar quais arquivos pertencem ao repositorio: git ls-files
+
+verificar estado dos arquivos do projeto: git status
+
+setar configurações de nome e email para o commit para apenas este repositorio git: 	git config user.name "João Carlos Fonseca"
+																						git config user.email "jcfonsecagit@gmail.com"
+																						
+setar configurações de nome e email para o commit para qualquer repositorio git: 	git config --global user.name "João Carlos Fonseca"
+																					git config --global user.email "jcfonsecagit@gmail.com"		
+
+realizar commit:git commit -m "Início do projeto" (m significa que terá uma descrição/mensagem do commit)	
+
+adicionar vários arquivos de uma vez: git add .   ou git add arquivo1 arquivo 2 arquivo3 
+
+marcando alterações iterativamente: git add -i
+
+A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! Porém, ela não adiciona os arquivos novos. 
+Podemos combinar a opção de mensagem com git commit -a -m 'Mensagem de commit' para não precisar escrever a mensagem no editor padrão do 
+console. : git commit -a
+
+sincronizando os dados da máquina com o repositório: git remote add origin https://github.com/Brunorodrigoss/curso-git.git
+
+ENVIAR PARA O SERVIDOR OS ARQUIVOS COMMITADOS LOCALMENTE: git push origin master
+
+sincronazar os arquivos locais com o diretório github(update): git pull origin master
+
+saber quais arquivos foram modificados: git whatchanged
+
+saber o que quais/ o que foi modificado no arquivo: git whatchanged -p     ou git log -p
+
+mostra quais branchs existem no projeto: git branch
+
+criando uma branch: git branch nomeDaBranch
+
+utilizar uma outra branch: git checkout nomeDaBranch
+
+enviando a branch criada localmente para o repositório remoto: git push origin design (origin=  nome do repositório, design= nome da branch que deseja-se enviar)
+
+mapear uma branch remota  para uma branch local(criada a branch localmente):git push -u origin design ( criamos uma ligação entre a nossa branch local e a branch remota.)
+
+verificar as branchs do repositorio remoto: git branch -r
+
+copiar branchs remotas para máquina local: git branch -t design origin/design
+
+criar uma branch e ja passar a utiliza-la: git checkout -b design (b representa branch, faz com que com esse comando não precise digitar git checkout design)
+
+Criação de uma branch local com o mesmo nome da branch remota,Mudança para essa nova branch criada, Criação de link entre a branch local e remota=git checkout -t origin/design
+
+saber se foram criadas branches novas no repositório remoto= git fetch origin
+ 
+utilizar ferramentas para merge: git mergetool -t nome_do_programa

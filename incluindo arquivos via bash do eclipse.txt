@@ -1,0 +1,136 @@
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11
+$ git init
+Initialized empty Git repository in C:/Users/Bruno/workspace/estudos/FJ11/.git/
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .project
+        .settings/
+        bin/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git add .classpath .project .settings/ bin/ src/
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .classpath
+        new file:   .project
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   bin/Carro.class
+        new file:   bin/Casa.class
+        new file:   bin/Cliente.class
+        new file:   bin/Conta.class
+        new file:   bin/Data.class
+        new file:   bin/Funcionario.class
+        new file:   bin/Motor.class
+        new file:   bin/Pessoa.class
+        new file:   bin/Porta.class
+        new file:   bin/Programa.class
+        new file:   bin/TestaCarro.class
+        new file:   bin/TestaCasa.class
+        new file:   bin/TestaDuasContas.class
+        new file:   bin/TestaFuncionario.class
+        new file:   bin/TestaPessoa.class
+        new file:   bin/TestaPorta.class
+        new file:   bin/TestaReferencias.class
+        new file:   src/Carro.java
+        new file:   src/Casa.java
+        new file:   src/Cliente.java
+        new file:   src/Conta.java
+        new file:   src/Data.java
+        new file:   src/Funcionario.java
+        new file:   src/Motor.java
+        new file:   src/Pessoa.java
+        new file:   src/Porta.java
+        new file:   src/Programa.java
+        new file:   src/TestaCarro.java
+        new file:   src/TestaCasa.java
+        new file:   src/TestaDuasContas.java
+        new file:   src/TestaFuncionario.java
+        new file:   src/TestaPessoa.java
+        new file:   src/TestaPorta.java
+        new file:   src/TestaReferencias.java
+
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git config --global user.name "Bruno Rodrigo"
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git config --global user.email "bnorodrigo@gmail.com"
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git commit -m "Inclusão de projeto"
+[master (root-commit) 0ba6e65] Inclusão de projeto
+ 37 files changed, 366 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/Carro.class
+ create mode 100644 bin/Casa.class
+ create mode 100644 bin/Cliente.class
+ create mode 100644 bin/Conta.class
+ create mode 100644 bin/Data.class
+ create mode 100644 bin/Funcionario.class
+ create mode 100644 bin/Motor.class
+ create mode 100644 bin/Pessoa.class
+ create mode 100644 bin/Porta.class
+ create mode 100644 bin/Programa.class
+ create mode 100644 bin/TestaCarro.class
+ create mode 100644 bin/TestaCasa.class
+ create mode 100644 bin/TestaDuasContas.class
+ create mode 100644 bin/TestaFuncionario.class
+ create mode 100644 bin/TestaPessoa.class
+ create mode 100644 bin/TestaPorta.class
+ create mode 100644 bin/TestaReferencias.class
+ create mode 100644 src/Carro.java
+ create mode 100644 src/Casa.java
+ create mode 100644 src/Cliente.java
+ create mode 100644 src/Conta.java
+ create mode 100644 src/Data.java
+ create mode 100644 src/Funcionario.java
+ create mode 100644 src/Motor.java
+ create mode 100644 src/Pessoa.java
+ create mode 100644 src/Porta.java
+ create mode 100644 src/Programa.java
+ create mode 100644 src/TestaCarro.java
+ create mode 100644 src/TestaCasa.java
+ create mode 100644 src/TestaDuasContas.java
+ create mode 100644 src/TestaFuncionario.java
+ create mode 100644 src/TestaPessoa.java
+ create mode 100644 src/TestaPorta.java
+ create mode 100644 src/TestaReferencias.java
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git remote add origin https://github.com/Brunorodrigoss/FJ11.git
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$ git push origin master
+Counting objects: 42, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (42/42), done.
+Writing objects: 100% (42/42), 13.16 KiB | 0 bytes/s, done.
+Total 42 (delta 0), reused 0 (delta 0)
+To https://github.com/Brunorodrigoss/FJ11.git
+ * [new branch]      master -> master
+
+Bruno@Bruno MINGW64 ~/workspace/estudos/FJ11 (master)
+$

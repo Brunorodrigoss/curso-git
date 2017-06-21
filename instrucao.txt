@@ -1,3 +1,5 @@
+https://git-scm.com/book/pt-br/v1/Primeiros-passos
+
 1 - Criação da chave de segurança (Git Bash): ssh-keygen -t rsa -C "seu_email@provedor.com"
 2 - Incluir a chave RSA(id_rsa.pub) no  "Settings", "SSH and GPG keys" e "New SSH key" no Github.
 
@@ -44,6 +46,8 @@ saber quais arquivos foram modificados: git whatchanged
 saber o que quais/ o que foi modificado no arquivo: git whatchanged -p     ou git log -p
 
 mostra quais branchs existem no projeto: git branch
+
+criar a branch e ja faz o checkout e acessa a branch:
 
 criando uma branch: git branch nomeDaBranch
 
